@@ -1,0 +1,404 @@
+/***********************************Navigationsmenyn************************************/
+#logo {
+  height: 3.5em;
+  border-radius: 25px;
+  padding: 0 0 0.2em 0.5em;
+}
+
+.nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: inline-flex;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.363)
+}
+
+.nav li {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  list-style: none;
+  display: inline-block;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255)
+}
+
+.nav li:hover {
+  background-color: rgba(167, 167, 167, 0.747);
+  color: black;
+}
+
+.nav li.home {
+  background-color: rgba(65, 70, 65, 0.336);
+  color: white;
+}
+
+.nav ul {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/***************************************************************Matmenyn********************************************************************/
+#backgroundcolormenu {
+  background-color: black;
+}
+
+#Welcome {
+  color: rgb(0, 128, 0);
+  font-size: 22px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#menu {
+  color: green;
+  font-size: 5em;
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+  border-style: outset;
+  margin: 50px;
+}
+
+.drink {
+  text-align: center;
+  color: orange;
+  font-family: 'Happy Monkey', cursive;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.headlinebox {
+  font-size: 24px;
+  color: orange;
+  font-family: 'Permanent Marker', cursive;
+  text-decoration: underline;
+
+}
+
+.drinklista {
+  color: black;
+  font-size: 2rem;
+  font-family: 'Happy Monkey', cursive;
+}
+
+.ingredienser {
+  color: black;
+  font-size: 1.3rem;
+  font-family: 'Happy Monkey', cursive;
+}
+
+.ingredientes {
+  font-size: 18px;
+  color: black;
+}
+
+.tacoboxinnehåll {
+  font-size: 14px;
+  color: rgba(129, 125, 125, 0.932);
+}
+
+.desserter {
+  font-family: 'Bungee Inline', cursive;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.678);
+  text-align: center;
+}
+
+.space {
+  margin: 3px;
+}
+
+/*******************************************************************Kod för Grid*************************************************************/
+.foodmenu {
+  display: grid;
+  grid-gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 30px;
+  font-size: 22px;
+  text-align: center;
+  border-bottom-style: groove;
+}
+
+.startdrink {
+  grid-column: 1 / 3;
+  grid-row: 1/4;
+  border-width: 10px;
+  text-align: center;
+
+}
+
+.smalldish {
+  grid-column: 3 / 4;
+  grid-row: 1 / 1;
+  border-width: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.maindish {
+  grid-column: 1/3;
+  grid-row: 4 / 4;
+  border-width: 10px;
+  font-family: 'Bungee Inline', cursive;
+  border-width: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+.tacoplate {
+  grid-column: 3/4;
+  grid-row: 2/5;
+  border-style: double;
+  border-width: 10px;
+  font-family: 'Happy Monkey', cursive;
+  color: black;
+}
+
+.tacos {
+  grid-column: 1 / 3;
+  grid-row: 5/9;
+  border-style: double;
+  border-width: 10px;
+  font-family: 'Happy Monkey', cursive;
+}
+
+.chickenplate {
+  grid-column: 3 / 4;
+  grid-row: 5/8;
+  border-style: double;
+  border-width: 10px;
+  font-family: 'Happy Monkey', cursive;
+}
+
+.burritos {
+  grid-column: 1 / 3;
+  grid-row: 9 / 13;
+  border-style: double;
+  border-width: 10px;
+  font-family: 'Happy Monkey', cursive;
+}
+
+.eight {
+  grid-column: 3 / 4;
+  grid-row: 8/11;
+  border-style: double;
+  border-width: 10px;
+  font-family: 'Happy Monkey', cursive;
+}
+
+.desserts {
+  border-style: solid;
+  grid-column: 1 / 3;
+  grid-row: 13/15;
+  font-family: 'Happy Monkey', cursive;
+}
+
+.skull {
+  grid-column: 3 / 4;
+  grid-row: 11/15;
+  border-width: 10px;
+}
+
+.churros {
+  grid-column: 3 / 4;
+  grid-row: 13/16;
+  border-width: 10px;
+}
+
+/********************************************************************Media queries *****************************************************************************/
+
+@media (max-width: 648px) {
+  .drink {
+    display: block;
+  }
+}
+
+@media (max-width: 414px) {
+  .foodmenu {
+    display: block;
+  }
+
+  #menu {
+    color: green;
+    font-size: 3em;
+    font-family: 'Bungee Inline', cursive;
+    text-align: center;
+    border-style: outset;
+    margin: 50px;
+  }
+
+  .foodmenu {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .ingredientes {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .startdrink {
+    text-align: center;
+    font-size: 14px;
+    border-style: double;
+    border-width: 10px;
+  }
+
+  /*NAVIGATIONSMENYN*/
+
+  #logo {
+    width: 40%;
+    border-radius: 25px;
+    padding: 0 0 0.2em 0.5em;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.363)
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav li {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255)
+  }
+
+  .nav li:hover {
+    background-color: rgba(167, 167, 167, 0.747);
+    color: black;
+  }
+
+  .nav li.home {
+    background-color: rgba(65, 70, 65, 0.336);
+    color: white;
+  }
+}
+
+/***************************************************************************************************************************************
+******************************************************************CATERING**************************************************************
+****************************************************************************************************************************************/
+
+
+
+img {
+  max-width: 100%;
+}
+
+#catering {
+  font-family: 'Song Myung', serif;
+  font-size: 3em;
+  text-align: center;
+  color: rgb(255, 123, 0);
+}
+
+.info {
+  font-size: 1.2em;
+  font-family: 'Gayathri', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.main {
+  margin: auto;
+  width: 1300px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  padding: 30px;
+}
+
+#forum {
+  margin: 20px;
+  width: 1300px;
+  font-size: 22px;
+  margin-left: 250px;
+  border-style: solid;
+  padding: 20px;
+  text-align: center;
+}
+
+.formdesign {
+  font-size: 22px;
+
+}
+
+#ordercatering {
+  display: flex;
+  flex-direction: row;
+}
+
+.fattext {
+  font-weight: bold;
+}
+
+#mexicans {
+  margin-right: 200px;
+  width: 1300px;
+}
+
+.colortext {
+  font-family: 'Permanent Marker',
+    cursive;
+  color: rgb(255, 148, 9);
+  text-decoration: underline;
+
+}
+
+/*******************************************Media queries för catering**************************************/
+
+@media (max-width: 1388px) {
+  .main {
+    font-size: 16px;
+    margin: auto;
+    width: auto;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1124px) {
+  #catering {
+    font-size: 33px;
+  }
+
+  #forum {
+    margin: auto;
+    width: auto;
+    font-size: 12px;
+  }
+
+  #mexicans {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  #catering {
+    font-size: 23px;
+  }
+
+
+  .formdesign {
+    margin: auto;
+  }

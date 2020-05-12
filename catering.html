@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catering</title>
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung&display=swap" rel="stylesheet">
+    <!--Font för Beställ catering-->
+
+    <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    <!--Font för info-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="meny.css">
+</head>
+
+<body>
+    <!---------------------------------------Navigationsmenyn---------------------------------------------->
+    <nav class="nav">
+        <img id="logo" src="pictures/LaSemanaLogo4.png" alt="La Semana Logo">
+        <ul>
+            <li><a class="hem" href="LaSemana.html" style="color: black; text-decoration: none;">Hem</a>
+            </li>
+
+            <li><a href="meny.html" style="color: black; text-decoration: none;">Meny</a>
+            </li>
+
+            <li><a href="contact.html" style="color: #000000; text-decoration: none;">Boka bord / Kontakt</a>
+            </li>
+
+            <li><a href="catering.html" style="color: #000000; text-decoration: none;">Catering</a>
+            </li>
+
+            <li><a href="work.html" style="color: #000000; text-decoration: none; ">Jobba hos oss!</a>
+            </li>
+
+        </ul>
+    </nav>
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <img src="pictures/tacobuffe4.jpg" alt="tacos">
+
+    <h1 id="catering"> Catering för 10 till 200 personer fr. 129 kr/person </h1>
+
+    <div class="main">
+        <div class="info">
+            <p> <span class="fattext">Vi dukar fram det allra bästa vi har att erbjuda och du och ditt sällskap gör era
+                    egna Tacos
+                    enligt egna preferenser.
+                    Om ni är ett mindre sällskap på 10 personer eller skall ha ett stort event för 200 eller fler så
+                    erbjuder vi
+                    en smakfull lösning som är perfekt för alla olika tillfällen.</span></p>
+
+            <p> <span class="fattext">Vad som ingår:</span>
+                Det ingår: Tortillabröd, nachos, hotsås, gräddfil, färsk salsa, sallad, hackad rödlök, koriander, riven
+                ost,
+                guacamole, jalapeños, pink pickled onions, lime, samt en blandning av våra mest uppskattade varma
+                fyllningar:</p>
+
+            <p> <span class="colortext">CARNITAS </span>– Den mexikanska motsvarigheten till Pulled Pork. Fläskarré
+                hickoryröks low & slow, på låt
+                temperatur i ca 10 timmar. Köttet dras isär och blandas med mexikansksås med smak av smokey chipotle och
+                spiskummin. Resultatet är magiskt.</p>
+
+            <p> <span class="colortext">SHREEDED BEEF</span> – Fint marmorerad högrev hickoryri över 20 timmar till
+                perfektion. Köttet dras isär och
+                blandas med riktig BBQ-sås för att bli saftigt och extra smakrikt.</p>
+
+            <p> <span class="colortext">KRYDDIG TACO BAR KÖTTFÄRS</span> – Köttfärs med maximalt 10% fetthalt där vi
+                tillsätter lite färsk lök och
+                tomatpuré, därefter kryddas den med vår unika tacokrydda.</p>
+
+            <p> <span class="colortext">KYCKLING –</span> Vi kryddar kycklinglårfilé med salt, paprika, spiskummin,
+                vitlök, oregano, cayennepeppar och
+                svartpeppar. Perfekt till våra Soft Tacos.</p>
+
+            <p> <span class="colortext">VEGETARISKT –</span> Du kan få nästan alla våra rätter vegetariska. Välj mellan
+                en het kryddig ratatouille på
+                sojabönor, kallad Chilli Veggie eller våra refried beans.</p>
+
+            <h3>Du väljer leverans:</h3>
+
+            <ul class="info">
+                <li>Pick up: Du hämtar upp på lämplig restaurang.</li>
+                <li>Delivery: Vi bokar din leverans (kostnad tillkommer).</li>
+                <li>Full service: Vi hjälper dig med allt (offert efter önskemål)</li>
+                <li> Vi tar hand om all mat vilket betyder mindre arbete för dig och mer tid för dina gäster/vänner. Om
+                    du vill så står vi gärna för ”full service” d.v.s. leverans, uppdukning, servering och
+                    bortplockning.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="ordercatering">
+        <div id="forum">
+            <h1> Beställ catering </h1>
+            <p><input class="formdesign" name="first-name" placeholder="Förnamn" type="text">
+                <input class="formdesign" name="last-name" placeholder="Efternamn" type="text"></p>
+
+            <p> <input class="formdesign" type="tel" id="phone" name="phone" placeholder="Mobilnummer">
+                <input class="formdesign" type="email" id="mail" name="mail" placeholder="e-mail"></p>
+
+            <p> <label for="date">Datum:</label>
+                <input class="formdesign" type="date" id="date" name="Datum">
+                <label for="time">Tid:</label>
+                <input class="formdesign" type="time" id="time" name="time">
+
+                <p> <label for="formdesign">Antal personer:</label>
+                    <input id="formdesign" type="number" name="quantity" min="1" max="200"></p>
+
+                <p> <textarea class="formdesign" cols="20" name="message" placeholder="Meddelande" rows="4"></textarea>
+                </p>
+
+                <input class="formdesign" type="button" value="Skicka">
+        </div>
+
+        <div id="mexicans">
+            <img src="pictures/play.png" alt="taco">
+        </div>
+    </div>
+</body>
+
+</html>

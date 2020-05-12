@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!--NAVIGERINGSMENY-->
+    <nav class="nav">
+        <img id="logo" src="LaSemanaLogo.png" alt="La Semana Logo">
+        <ul>
+            <li><a class="hem" href="LaSemana.html" style="color: black; text-decoration: none;">Hem</a>
+            </li>
+
+            <li><a href="meny.html" style="color: black; text-decoration: none;">Meny</a>
+            </li>
+
+            <li><a href="contact.html" style="color: #000000; text-decoration: none;">Boka bord / Kontakt</a>
+            </li>
+
+            <li><a href="catering.html" style="color: #000000; text-decoration: none;">Catering</a>
+            </li>
+
+            <li><a href="work.html" style="color: #000000; text-decoration: none; ">Jobba hos oss!</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="main">
+        <!--FÖRSTA FYRA BOXARNA-->
+        <div class="container1">
+            <div class="box1">
+                <select class="first-four-boxes" name="guests">
+                    <option value="one">1 person</option>
+                    <option value="two">2 personer</option>
+                    <option value="three">3 personer</option>
+                    <option value="four">4 personer</option>
+                    <option value="five">5 personer</option>
+                    <option value="six">6 personer</option>
+                    <option value="seven">7 personer</option>
+                    <option value="eight">8 personer</option>
+                    <option value="eight">Större sällskap</option>
+                </select>
+            </div>
+
+            <div class="box2">
+                <input class="first-four-boxes" name="name" placeholder="Förnamn och Eftermnamn" type="text">
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="box3">
+                <input class="first-four-boxes" name="email" placeholder="E-post" type="email">
+            </div>
+
+            <div class="box4">
+                <input class="first-four-boxes" name="phone" placeholder="Telefonnummer" type="tel">
+            </div>
+        </div>
+
+        <!--KALENDER-->
+        <div class="container3">
+            <div class="box5">
+                <span><input class="calendar-button" type="button" value="&lt;"></span>
+                <span class="month">Oktober</span>
+                <span class="year">2019</span>
+                <span><input class="calendar-button" type="button" value="&gt;"></span>
+            </div>
+            <div class="box6">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <span title="Måndag">Må</span>
+                            </th>
+                            <th>
+                                <span title="Tisdag">Ti</span>
+                            </th>
+                            <th>
+                                <span title="Onsdag">On</span>
+                            </th>
+                            <th>
+                                <span title="Torsdag">To</span>
+                            </th>
+                            <th>
+                                <span title="Fredag">Fr</span>
+                            </th>
+                            <th>
+                                <span title="Lördag">Lö</span>
+                            </th>
+                            <th>
+                                <span title="Söndag">Sö</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--SLUT CONTAINER 2 OCH KALENDER-->
+
+        <!--KNAPPAR MED TIDER-->
+        <div class="container4">
+            <button id="1">14:00</button>
+            <button id="2">14:30</button>
+            <button id="3">15:00</button>
+            <button id="4">15:30</button>
+            <button id="5">16:00</button>
+            <button id="6">16:30</button>
+            <button id="7" class="button-booked">17:00</button>
+            <button id="8" class="button-booked">17:30</button>
+            <button id="9">18:00</button>
+            <button id="10" class="button-booked">18:30</button>
+            <button id="11" class="button-booked">19:00</button>
+            <button id="12" class="button-booked">19:30</button>
+            <button id="13">20:00</button>
+            <button id="14">20:30</button>
+            <button id="15">21:00</button>
+            <button id="16">21:30</button>
+        </div>
+        <div class="tailwind-button">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">
+                Boka
+            </button>
+        </div>
+
+        <div class="container5">
+            <!--KONTAKT OCH HITTA HIT-->
+            <div class="contactInfo">
+                <h2>Kontakt</h2>
+                <p><b>Telefonnummer: </b>031-988323</p>
+                <p><b>Adress: </b>Kungsgatan 1 43336 Göteborg</p>
+                <p><b>Mail: </b>lasemana@contact.se</p>
+            </div>
+
+            <div class="map">
+                <a href="https://goo.gl/maps/VAxurphnArwEWz3X6"><img id="map-to-lasemana" src="map.png"
+                        alt="Karta till La Semana"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>Öppetider</h3>
+        <div class="openingTimes">
+            <p>Måndag - Torsdag: 11-22</p>
+            <p>Fredag: 11-01</p>
+            <p>Lördag: 15-01</p>
+            <p>Söndag: 15-21</p>
+        </div>
+    </footer>
+</body>
+
+</html>

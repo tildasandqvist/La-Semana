@@ -1,0 +1,331 @@
+/*-----------------------------------------------
+                NAVIGATIONSMENY
+-----------------------------------------------*/
+#logo {
+    height: 3.5em;
+    border-radius: 25px;
+    padding: 0 0 0.2em 0.5em;
+}
+
+.nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    display: inline-flex;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.363);
+    padding-top: 0.7em;
+}
+
+
+.nav li {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.568)
+}
+
+.nav li:hover {
+    /*background-color: rgba(167, 167, 167, 0.432);*/
+    color: rgb(226, 70, 70);
+}
+
+.nav li.home {
+    background-color: rgba(65, 70, 65, 0.336);
+    color: white;
+}
+
+.nav ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*-----------------------------------------------
+                HEADER OCH TEXT
+-----------------------------------------------*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 0 0.5em 0;
+}
+
+#header-picture {
+    width: 100%;
+}
+
+#headline {
+    position: absolute;
+    margin: auto;
+    top: 38%;
+    font-size: 4em;
+    color: #fff;
+    background-color: #000;
+    padding: 0 0.5em 0 0.5em;
+}
+
+p {
+    padding: 1em;
+    text-align: center;
+}
+
+.aboutUs {
+    font-family: 'Quicksand',
+        sans-serif;
+    font-size: 1.4em;
+    padding: 0.5em;
+}
+
+span {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+/*-----------------------------------------------
+                 BULMA FORMULÄR
+-----------------------------------------------*/
+
+.field {
+    margin: 1.5em;
+}
+
+.file {
+    margin: 1em 0 1em 1.6em;
+}
+
+/*-----------------------------------------------
+                 BULMA FORMULÄR
+-----------------------------------------------*/
+
+.column {
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+.column h2,
+.column h3 {
+    font-weight: bold;
+}
+
+.column h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.column p {
+    margin-bottom: 0.5em;
+}
+
+#column-avaiable-positions {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1em;
+    text-align: center;
+    margin: 3em auto 4em auto;
+    font-weight: bold;
+}
+
+#applyText {
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+/*-----------------------------------------------
+                     MEDIA
+-----------------------------------------------*/
+
+@media (max-width: 768px) {
+
+    /*NAVIGATIONSMENYN*/
+    #logo {
+        width: 40%;
+        height: auto;
+        border-radius: 25px;
+        margin: auto;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.363)
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav li {
+        color: #000000;
+        text-decoration: none;
+        font-size: 24px;
+        list-style: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 3px rgb(255, 255, 255)
+    }
+
+    .nav li:hover {
+        background-color: rgba(167, 167, 167, 0.747);
+        color: black;
+    }
+
+    .nav li.home {
+        background-color: rgba(65, 70, 65, 0.336);
+        color: white;
+    }
+
+    /*  HEADLINE  */
+    #headline {
+        position: absolute;
+        font-size: 2em;
+        top: 30%;
+        color: #fff;
+        background-color: #000;
+        padding: 0 0.5em 0 0.5em;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #headline {
+        position: absolute;
+        font-size: 2em;
+        top: 42%;
+        color: #fff;
+        background-color: #000;
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .aboutUs {
+        font-family: 'Quicksand',
+            sans-serif;
+        font-size: 1.2em;
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 360px) {
+
+    /*NAVIGATIONSMENYN*/
+    #logo {
+        width: 40%;
+        border-radius: 25px;
+        margin: auto;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.363)
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav li {
+        color: #000000;
+        text-decoration: none;
+        font-size: 24px;
+        list-style: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 3px rgb(255, 255, 255)
+    }
+
+    .nav li:hover {
+        background-color: rgba(167, 167, 167, 0.747);
+        color: black;
+    }
+
+    .nav li.home {
+        background-color: rgba(65, 70, 65, 0.336);
+        color: white;
+    }
+
+    /*HEADER OCH OM-TEXT*/
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0.9em 0 0.5em 0;
+    }
+
+    #header-picture {
+        width: 100%;
+    }
+
+    #headline {
+        position: absolute;
+        font-size: 2em;
+        top: 40%;
+        color: #fff;
+        background-color: #000;
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .column,
+    .field {
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .aboutUs {
+        font-family: 'Quicksand',
+            sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 0.1em 1em 0.1em 1em;
+    }
+
+    span {
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+
+    #applyText {
+        padding: 1.5em;
+        margin: 0;
+    }
+
+    /*KOLUMNER*/
+
+    .column {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans',
+            sans-serif;
+    }
+
+    .column h2 {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+
+    .field {
+        margin: 0;
+    }
+
+    .file {
+        margin: 0;
+    }
+}

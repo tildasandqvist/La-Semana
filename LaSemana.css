@@ -1,0 +1,343 @@
+
+body {
+  background-image: url(mexicanfood11.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#logo {
+    height: 3.5em;
+    border-radius: 25px;
+    padding: 0 0 0.2em 0.5em;
+} 
+
+.nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: inline-flex;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.363)
+}
+
+
+.nav li {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  list-style: none;
+  display: inline-block;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.568)
+}
+
+.nav li:hover {
+  background-color: rgba(167, 167, 167, 0.432);
+  color: rgb(226, 70, 70);
+}
+
+.nav li.home {
+  background-color: rgba(65, 70, 65, 0.336);
+  color: white;
+}
+
+.nav ul {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.maintextlogo, .secondtextlogo {
+  text-align: center;
+  font-family: 'Lobster Two', cursive;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: white;
+  margin: 25px 0 60px 0;
+}
+
+#maintext {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px outset rgba(204, 204, 204, 0.295);
+  border-radius: 20px;
+  background-color: #000000e8;
+  resize: none;
+  margin: 50em 0 0 0;
+}
+
+#maintext p {
+  color: white;
+  letter-spacing: 1px;
+  line-height: 43px;
+  text-align: center;
+  margin: 4.7vw 55vw 5vw 9vw;
+}
+
+.taco, .plate {
+  float: right;
+  margin: 0 3em 2em 1em;
+  max-width: 300px;
+  max-height: 200px;
+  box-shadow: 0 0 50px 1px rgba(255, 255, 255, 0.418);
+}
+
+/* OMDÖME BOX */
+
+
+#omdomenbox {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px outset rgba(204, 204, 204, 0.295);
+  border-radius: 20px;
+  background-color: #000000e8;
+  resize: none;
+  margin: 20em 0 0 0;
+
+}
+
+.box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.quote {
+  width: 1200px;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
+
+.quote .box {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background: rgba(204, 204, 204, 0.801);
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 10px 0px 10px 30px;
+  box-shadow: -5px 15px 30px rgba(255, 255, 255, 0.418);
+  margin: 1.5em;
+  border-radius: 10px;
+}
+
+.quote .box:hover {
+  box-shadow: 0 0px 80px rgba(255, 255, 255, 0.774);
+  background-color: #ccc;
+}
+
+.box > h2 {
+  border: outset rgba(0, 0, 0, 0.418);
+  padding: 20px;
+  border-radius: 2em;
+  margin: 20px
+}
+.box > p {
+
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
+
+
+/**************    REVIEW    *************/
+
+.reviewlogo {
+  margin-left: 15px;
+}
+
+.leavereviewlogo {
+  margin-left: 15px;
+}
+
+
+#reviewbox {
+  width: auto;
+  height: 31em;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px outset rgba(204, 204, 204, 0.295);
+  border-radius: 20px;
+  background-color: #000000e8;
+  resize: none;
+  margin: 20em 0 0 0;
+  margin-bottom: 10em;
+}
+
+#container {
+  margin: 3em;
+  display: grid;
+  grid-gap: 0.2em;
+  grid-template-columns: 23% 21.5%;
+  grid-template-rows: 50% 1fr 1fr;
+  height: auto;
+  gap: 3em;
+  width: auto;
+  justify-content: center;
+  
+} 
+
+.eva {
+  font-size: 18px;
+  line-height: 2em;
+  margin: 4px;
+  
+}
+
+.checked {
+  color: orange;
+}
+.checkbox {
+   margin: 4px;
+}
+.checkbox0 {
+  margin-right: 55px;
+}
+.checkbox1 {
+  margin-right: 41px;
+}
+.checkbox2 {
+  margin-right: 79px;
+}
+.checkbox4 {
+  margin-right: 81px;
+}
+.checkbox5 {
+  margin-right: 33px;
+}
+
+
+/********************** MEDIA ************************/
+
+@media (max-width: 971px) {
+  #logo {             /*NAVIGATIONSMENYN*/
+    width: 20%;
+    border-radius: 25px;
+    padding: 0 0 0.2em 0.5em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.363)
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav li {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255)
+}
+
+.nav li:hover {
+  background-color: rgba(167, 167, 167, 0.747);
+  color: black;
+}
+
+.nav li.home {
+  background-color: rgba(65, 70, 65, 0.336);
+  color: white;
+}
+}
+
+
+@media (max-width: 847px) {
+  #logo {          
+   display: none
+}
+}
+
+ @media (max-width: 1260px) {
+  #maintext p {
+  margin: 1em;
+  line-height: 40px;
+}
+}
+@media (max-width: 426px) {
+  .taco, .plate {
+  margin: 0 2em 2em 2em;
+  }
+  .quote {
+  display: inline-block;
+  }
+}
+
+@media (max-width: 426px) {
+body {
+  background-image: url(mexicanfood11.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 55em;
+ }
+}
+
+@media (max-width: 360px) {
+.quote .box {
+  position: relative;
+  width: 270px;
+  height: auto;
+  background: rgba(204, 204, 204, 0.801);
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 10px 0px 10px 30px;
+  box-shadow: -5px 15px 30px rgba(255, 255, 255, 0.418);
+  margin: 1.5em 0.1em 3em 0.1em;
+  border-radius: 10px;
+  }
+  .box > h2 {
+  font-size: 13px;
+  border: outset rgba(0, 0, 0, 0.418);
+  padding: 10px;
+  border-radius: 2em;
+  margin: 20px;
+  align-self: flex-end;
+}
+ .box > p {
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-size: 6vw;
+}
+}
+
+@media (max-width:360px) {
+  .container, .eva, .reviewlogo, .reviewborder, .leavereviewlogo, #reviewbox
+  {
+     display: none
+  }
+}
